@@ -1,0 +1,5 @@
+# Verified with Python 3.12.14. Exact certificate arithmetic is standard library.
+# NumPy is used for independent small tensor-space projector checks.
+numpy==2.3.5
+# Matplotlib is used only to generate PNG, PDF, and SVG figures.
+matplotlib==3.10.8

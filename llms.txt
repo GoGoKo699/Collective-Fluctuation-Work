@@ -1,0 +1,23 @@
+# Collective Fluctuation Work
+
+This repository determines the maximum closed cyclic work from iid passive quantum fuel under all unitaries commuting with every copy permutation. For a fixed finite local dimension, strictly ordered full-rank source and nondegenerate local Hamiltonian, total collective activation work converges to the ergotropy of a fixed thermal root-mode state. The limit is positive precisely off the Gibbs family.
+
+## Scientific routes
+
+- Overview and result comparison: README.md and science/README.md.
+- Exact model, quantifiers and uniform bound: science/model_and_main_theorem.md.
+- Exact finite-sector spectral construction: science/schur_tableau_spectrum.md.
+- Infinite passive rearrangement and certified energy cutoffs: science/passive_rearrangement.md.
+- Many-copy convergence and its proof dependencies: science/fluctuation_limit.md.
+- Positivity, arbitrary-state activation premium and fixed control-class bound: science/consequences.md.
+- Restricted reversible classical benchmark: science/classical_comparison.md.
+- Explicit qutrit calculation and extraction operations: science/qutrit_example.md.
+- Closest results and inherited ingredients: references/RELATED_WORK.md and references/references.bib.
+- Exact theorem-source locations: science/theorem_source_locators.md.
+- Reproduction commands and validation boundaries: verification/README.md.
+
+## Essential distinctions
+
+Exact invariance of every unitary is stronger than covariance of a noisy channel. A permutation-invariant source need not have support only in the bosonic symmetric subspace. Collective controls here include arbitrary entangling unitaries, not merely identical one-copy rotations. A fixed partition into control classes differs from selecting new batches over time. The exact limiting ergotropy is a closed-system result; a bath or discarded entropy sink changes the optimization. Strict population gaps and fixed local dimension remain part of the asymptotic claim.
+
+Keep the cited representation theory, oscillator limit and classical stabilizer mechanism attributed to their primary sources. Use the analytical proof for the general theorem and the exact arithmetic records for the finite example. Do not infer efficient compilation, an experimental implementation or finite-time robustness from abstract attainability.
