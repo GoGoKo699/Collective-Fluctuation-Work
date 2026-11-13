@@ -2,7 +2,7 @@
 
 ## Model and inherited mechanism
 
-Let $`H=\sum_{i=1}^d E_i|i\rangle\langle i|`$, with $`E_1<\cdots<E_d`$, and let $`p_1>\cdots>p_d>0`$. The input is the iid distribution $`p^{\otimes n}`$ on product energy-basis strings $`x\in[d]^n`$. The energy of a string is $`E(x)=\sum_jE_{x_j}`$.
+Let $`H=\sum_{i=1}^d E_i|i\rangle\langle i|`$, with $`E_1\lt \cdots\lt E_d`$, and let $`p_1>\cdots>p_d>0`$. The input is the iid distribution $`p^{\otimes n}`$ on product energy-basis strings $`x\in[d]^n`$. The energy of a string is $`E(x)=\sum_jE_{x_j}`$.
 
 The allowed classical operation is a bijection $`f:[d]^n\to[d]^n`$ satisfying
 
@@ -64,7 +64,7 @@ This follows from the rearrangement inequality and the attainability of every ty
 
 ## Exponential upper bound
 
-Set $`\delta=\min_{i<d}(p_i-p_{i+1})>0`$ and $`\Delta E=E_d-E_1`$. For each adjacent pair, write
+Set $`\delta=\min_{i\lt d}(p_i-p_{i+1})>0`$ and $`\Delta E=E_d-E_1`$. For each adjacent pair, write
 
 ```math
 N_i-N_{i+1}=\sum_{j=1}^nY_j,\qquad

@@ -10,7 +10,7 @@ These are the primary sources needed to audit the mathematical dependency chain.
 |---|---|
 | Theorem 5.2, p. 27 | Semistandard tableaux index a generally nonorthogonal basis of the irrep. |
 | Paragraph following Theorem 5.2, p. 27 | Coordinates $`m_{ij}`$ count entries $`j`$ in row $`i`$. |
-| Eq. (5.9), p. 28 | Exact diagonal-state eigenvalues are a highest-weight factor times $`\prod_{i<j}(p_j/p_i)^{m_{ij}}`$. |
+| Eq. (5.9), p. 28 | Exact diagonal-state eigenvalues are a highest-weight factor times $`\prod_{i\lt j}(p_j/p_i)^{m_{ij}}`$. |
 | Lemma 6.3, p. 34 | Uniform convergence of typical block states to the oscillator thermal state. |
 | Section 7.6, pp. 57–59; Eqs. (7.37)–(7.44) | Product geometric root modes, normalization estimates, finite-occupation inclusion, geometric tails, and the nonorthogonality issue. |
 

@@ -21,17 +21,17 @@ For the converse, define the inverse temperatures of the adjacent root modes,
 ```math
 \beta_i
 =\frac{\log(p_i/p_{i+1})}{E_{i+1}-E_i}>0,
-\qquad 1\le i<d.
+\qquad 1\le i\lt d.
 ```
 
-If all these numbers equal $`\beta`$, telescoping gives $`p_i\propto e^{-\beta E_i}`$. Thus a non-Gibbs population vector has two adjacent root modes, denoted $`a`$ and $`b`$, with $`\beta_a<\beta_b`$. Write their gaps as $`\omega_a,\omega_b`$.
+If all these numbers equal $`\beta`$, telescoping gives $`p_i\propto e^{-\beta E_i}`$. Thus a non-Gibbs population vector has two adjacent root modes, denoted $`a`$ and $`b`$, with $`\beta_a\lt \beta_b`$. Write their gaps as $`\omega_a,\omega_b`$.
 
 There exist positive integers $`m,\ell`$ satisfying
 
 ```math
 \frac{\omega_b}{\omega_a}
-<\frac{m}{\ell}
-<\frac{\beta_b\omega_b}{\beta_a\omega_a},
+\lt \frac{m}{\ell}
+\lt \frac{\beta_b\omega_b}{\beta_a\omega_a},
 ```
 
 because this interval is nonempty and the rationals are dense. Compare two fluctuation basis states: $`A`$ has $`m`$ excitations in mode $`a`$ and all other modes empty; $`B`$ has $`\ell`$ excitations in mode $`b`$ and all other modes empty. Then

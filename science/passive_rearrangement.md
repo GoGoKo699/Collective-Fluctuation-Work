@@ -7,7 +7,7 @@ This section supplies the infinite-dimensional optimization used in the [main th
 Consider the fluctuation pair $`(\tau_\infty,K_\infty)`$. Every mode frequency is positive, so every finite-energy subspace is finite-dimensional:
 
 ```math
-\#\{\boldsymbol m:k_{\boldsymbol m}\le L\}<\infty
+\#\{\boldsymbol m:k_{\boldsymbol m}\le L\}\lt \infty
 \qquad\text{for every finite }L.
 ```
 
@@ -66,7 +66,7 @@ The projection inequality therefore implies
 =\sum_{j=1}^{\infty}a_je_j.
 ```
 
-Applying this inequality to the identity unitary shows $`F_\infty\le\mu_\infty<\infty`$. Finally, map a complete population eigenbasis, in descending order, to a complete energy eigenbasis, in ascending order. The resulting basis permutation extends to a unitary and has final energy $`F_\infty`$. ∎
+Applying this inequality to the identity unitary shows $`F_\infty\le\mu_\infty\lt \infty`$. Finally, map a complete population eigenbasis, in descending order, to a complete energy eigenbasis, in ascending order. The resulting basis permutation extends to a unitary and has final energy $`F_\infty`$. ∎
 
 Thus
 

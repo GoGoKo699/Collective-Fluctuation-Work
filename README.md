@@ -14,7 +14,7 @@ The unrestricted activation benchmark is [established prior work](references/REL
 
 ## Principal result
 
-Let $`H=\mathrm{diag}(E_1,\ldots,E_d)`$ with $`E_1<\cdots<E_d`$, and let $`\rho=\mathrm{diag}(p_1,\ldots,p_d)`$ with $`p_1>\cdots>p_d>0`$. The dimension, Hamiltonian and state remain fixed as $`n`$ grows. Define
+Let $`H=\mathrm{diag}(E_1,\ldots,E_d)`$ with $`E_1\lt \cdots\lt E_d`$, and let $`\rho=\mathrm{diag}(p_1,\ldots,p_d)`$ with $`p_1>\cdots>p_d>0`$. The dimension, Hamiltonian and state remain fixed as $`n`$ grows. Define
 
 ```math
 W_n^{\mathrm{sym}}
@@ -27,7 +27,7 @@ The [main theorem](science/model_and_main_theorem.md) proves a uniform bound $`W
 
 ```math
 \lim_{n\to\infty} W_n^{\mathrm{sym}}
-=\mathcal W\!\left(\tau_\infty,K_\infty\right)<\infty.
+=\mathcal W\!\left(\tau_\infty,K_\infty\right)\lt \infty.
 ```
 
 There is one mathematical oscillator mode for each pair of energy levels. Its energy gap is $`E_j-E_i`$ and its geometric occupation ratio is $`p_j/p_i`$. The known oscillator description becomes an exact work law through the [spectral construction](science/schur_tableau_spectrum.md), [passive-rearrangement argument](science/passive_rearrangement.md), and [energy-controlled limit](science/fluctuation_limit.md). These modes describe fluctuations within symmetry sectors; no auxiliary physical oscillators are supplied to the protocol.

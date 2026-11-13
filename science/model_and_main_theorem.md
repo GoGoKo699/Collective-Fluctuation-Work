@@ -6,7 +6,7 @@ Fix a local dimension $`d\ge2`$, a nondegenerate Hamiltonian
 
 ```math
 H=\sum_{i=1}^{d}E_i|i\rangle\langle i|,
-\qquad E_1<\cdots<E_d,
+\qquad E_1\lt \cdots\lt E_d,
 ```
 
 and a strictly passive full-rank state
@@ -40,7 +40,7 @@ The maximum exists because the allowed unitary group is compact. This is restric
 
 ## Fluctuation state
 
-Let $`\mathcal R=\{(i,j):1\le i<j\le d\}`$, with $`R=|\mathcal R|=d(d-1)/2`$. For each pair define
+Let $`\mathcal R=\{(i,j):1\le i\lt j\le d\}`$, with $`R=|\mathcal R|=d(d-1)/2`$. For each pair define
 
 ```math
 r_{ij}=\frac{p_j}{p_i}\in(0,1),\qquad
@@ -50,17 +50,17 @@ r_{ij}=\frac{p_j}{p_i}\in(0,1),\qquad
 On $`\mathcal F=\ell^2(\mathbb N_0^{\mathcal R})`$, introduce
 
 ```math
-Z_\infty=\prod_{i<j}\frac1{1-r_{ij}},\qquad
+Z_\infty=\prod_{i\lt j}\frac1{1-r_{ij}},\qquad
 \tau_\infty=\frac1{Z_\infty}
 \sum_{\boldsymbol m\in\mathbb N_0^{\mathcal R}}
-\left(\prod_{i<j}r_{ij}^{m_{ij}}\right)
+\left(\prod_{i\lt j}r_{ij}^{m_{ij}}\right)
 |\boldsymbol m\rangle\langle\boldsymbol m|,
 ```
 
 ```math
-K_\infty=\sum_{i<j}\omega_{ij}N_{ij},\qquad
+K_\infty=\sum_{i\lt j}\omega_{ij}N_{ij},\qquad
 \mu_\infty=\mathrm{Tr}(\tau_\infty K_\infty)
-=\sum_{i<j}\omega_{ij}\frac{r_{ij}}{1-r_{ij}}<\infty.
+=\sum_{i\lt j}\omega_{ij}\frac{r_{ij}}{1-r_{ij}}\lt \infty.
 ```
 
 These mathematical oscillator modes describe within-sector fluctuations; they are not additional physical systems supplied to the protocol. The geometric root-mode state and associated tail estimates are established ingredients of quantum local asymptotic normality, particularly Kahn–Guţă's Lemma 6.3 and Section 7.6. Their exact tableau spectral formulas also underlie the proof below. See the [source locators](theorem_source_locators.md).
