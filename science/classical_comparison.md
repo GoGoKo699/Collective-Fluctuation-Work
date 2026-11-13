@@ -2,7 +2,7 @@
 
 ## Model and inherited mechanism
 
-Let $`H=\sum_{i=1}^d E_i|i\rangle\langle i|`$, with $`E_1<\cdots<E_d`$, and let $`p_1>\cdots>p_d>0`$. The input is the iid distribution $`p^{\otimes n}`$ on product energy-basis strings $`x\in[d]^n`$. The energy of a string is $`E(x)=\sum_jE_{x_j}`$.
+Let $`H=\sum_{i=1}^d E_i|i\rangle\langle i|`$, with $`E_1\lt \cdots\lt E_d`$, and let $`p_1>\cdots>p_d>0`$. The input is the iid distribution $`p^{\otimes n}`$ on product energy-basis strings $`x\in[d]^n`$. The energy of a string is $`E(x)=\sum_jE_{x_j}`$.
 
 The allowed classical operation is a bijection $`f:[d]^n\to[d]^n`$ satisfying
 
@@ -19,10 +19,10 @@ The **stabilizer obstruction is prior work**. Yadin, Morris, and Adesso, [“Mix
 For any string, write
 
 ```math
-\operatorname{Stab}(x)=\{\pi\in S_n:\pi x=x\}.
+\mathrm{Stab}(x)=\{\pi\in S_n:\pi x=x\}.
 ```
 
-Equivariance gives $`\operatorname{Stab}(x)\subseteq\operatorname{Stab}(f(x))`$. Since the inverse of an equivariant bijection is equivariant, the reverse inclusion holds as well. Thus the stabilizers agree as actual subgroups of $`S_n`$, not merely as abstract groups or groups of equal size.
+Equivariance gives $`\mathrm{Stab}(x)\subseteq\mathrm{Stab}(f(x))`$. Since the inverse of an equivariant bijection is equivariant, the reverse inclusion holds as well. Thus the stabilizers agree as actual subgroups of $`S_n`$, not merely as abstract groups or groups of equal size.
 
 The orbits of this stabilizer on the sites are precisely the sets of positions bearing each occupied symbol, including singleton sets. Therefore $`f(x)`$ can only relabel the occupied symbols injectively. It cannot split an equal-symbol block, since that would remove a stabilizing transposition; it cannot merge distinct blocks, since that would add one. Consequently the unordered multiset of occupation counts is preserved pointwise.
 
@@ -64,7 +64,7 @@ This follows from the rearrangement inequality and the attainability of every ty
 
 ## Exponential upper bound
 
-Set $`\delta=\min_{i<d}(p_i-p_{i+1})>0`$ and $`\Delta E=E_d-E_1`$. For each adjacent pair, write
+Set $`\delta=\min_{i\lt d}(p_i-p_{i+1})>0`$ and $`\Delta E=E_d-E_1`$. For each adjacent pair, write
 
 ```math
 N_i-N_{i+1}=\sum_{j=1}^nY_j,\qquad

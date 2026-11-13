@@ -8,9 +8,9 @@ Robert Alicki and Mark Fannes established the unrestricted many-copy benchmark i
 
 ```math
 \lim_{n\to\infty}\frac{W_n^{\mathrm{all}}(\rho,H)}{n}
-=\operatorname{Tr}(\rho H)-\operatorname{Tr}(\gamma_{\bar\beta}H),
+=\mathrm{Tr}(\rho H)-\mathrm{Tr}(\gamma_{\bar\beta}H),
 \qquad
-\gamma_{\bar\beta}=\frac{e^{-\bar\beta H}}{\operatorname{Tr}e^{-\bar\beta H}},
+\gamma_{\bar\beta}=\frac{e^{-\bar\beta H}}{\mathrm{Tr}e^{-\bar\beta H}},
 \qquad
 S(\gamma_{\bar\beta})=S(\rho).
 ```
@@ -47,9 +47,9 @@ The following projects study different operational resources. Commit links fix t
 
 | Repository and model | Commit pin | Relation to the present result |
 |---|---|---|
-| [Quantum-Work-Activation: science/model.md](https://github.com/GoGoKo699/Quantum-Work-Activation/blob/1d17a9f23cc729719ed171454ac6978528984e86/science/model.md) | `1d17a9f23cc729719ed171454ac6978528984e86` | Known near-Gibbs qutrit fuel and arbitrary copy-block unitaries; block sizes for activation or a fraction of asymptotic work as the distance from Gibbs shrinks. Here the state is fixed, copy number grows, and the permutation commutant restricts every allowed unitary. |
-| [Collective-Work-Thresholds: science/model.md](https://github.com/GoGoKo699/Collective-Work-Thresholds/blob/79689300d19dc8cda1d8ddd3f02fd755ef1d0ee8/science/model.md) | `79689300d19dc8cda1d8ddd3f02fd755ef1d0ee8` | Near-Gibbs activation and useful-work thresholds for unrestricted copy-block unitaries with a fixed commensurate local spectrum. The present asymptotic restriction is the control symmetry, rather than the available copy-block size. |
-| [Universal-Quantum-Work: science/model_theorem.md](https://github.com/GoGoKo699/Universal-Quantum-Work/blob/3fb8e9dca2eaec4c1ab449323820c2f97251c15b/science/model_theorem.md) | `3fb8e9dca2eaec4c1ab449323820c2f97251c15b` | A source-independent thermal processor for unknown iid states, with Gibbs ancillas, an explicit battery, and discarding; its rate is relative-entropy free energy. This project concerns a known finite-dimensional source and closed cyclic system unitaries with exact permutation symmetry. |
+| [Quantum-Work-Activation: science/model.md](https://github.com/GoGoKo699/Quantum-Work-Activation/blob/1d17a9f23cc729719ed171454ac6978528984e86/science/model.md) | [1d17a9f23c](https://github.com/GoGoKo699/Quantum-Work-Activation/commit/1d17a9f23cc729719ed171454ac6978528984e86) | Known near-Gibbs qutrit fuel and arbitrary copy-block unitaries; block sizes for activation or a fraction of asymptotic work as the distance from Gibbs shrinks. Here the state is fixed, copy number grows, and the permutation commutant restricts every allowed unitary. |
+| [Collective-Work-Thresholds: science/model.md](https://github.com/GoGoKo699/Collective-Work-Thresholds/blob/79689300d19dc8cda1d8ddd3f02fd755ef1d0ee8/science/model.md) | [79689300d1](https://github.com/GoGoKo699/Collective-Work-Thresholds/commit/79689300d19dc8cda1d8ddd3f02fd755ef1d0ee8) | Near-Gibbs activation and useful-work thresholds for unrestricted copy-block unitaries with a fixed commensurate local spectrum. The present asymptotic restriction is the control symmetry, rather than the available copy-block size. |
+| [Universal-Quantum-Work: science/model_theorem.md](https://github.com/GoGoKo699/Universal-Quantum-Work/blob/3fb8e9dca2eaec4c1ab449323820c2f97251c15b/science/model_theorem.md) | [3fb8e9dca2](https://github.com/GoGoKo699/Universal-Quantum-Work/commit/3fb8e9dca2eaec4c1ab449323820c2f97251c15b) | A source-independent thermal processor for unknown iid states, with Gibbs ancillas, an explicit battery, and discarding; its rate is relative-entropy free energy. This project concerns a known finite-dimensional source and closed cyclic system unitaries with exact permutation symmetry. |
 
 ## Operational scope
 

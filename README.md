@@ -14,12 +14,12 @@ The unrestricted activation benchmark is [established prior work](references/REL
 
 ## Principal result
 
-Let $`H=\operatorname{diag}(E_1,\ldots,E_d)`$ with $`E_1<\cdots<E_d`$, and let $`\rho=\operatorname{diag}(p_1,\ldots,p_d)`$ with $`p_1>\cdots>p_d>0`$. The dimension, Hamiltonian and state remain fixed as $`n`$ grows. Define
+Let $`H=\mathrm{diag}(E_1,\ldots,E_d)`$ with $`E_1\lt \cdots\lt E_d`$, and let $`\rho=\mathrm{diag}(p_1,\ldots,p_d)`$ with $`p_1>\cdots>p_d>0`$. The dimension, Hamiltonian and state remain fixed as $`n`$ grows. Define
 
 ```math
 W_n^{\mathrm{sym}}
 =\max_{[U,P_\pi]=0\ \forall\pi\in S_n}
-\operatorname{Tr}\!\left[H_n\left(\rho^{\otimes n}-U\rho^{\otimes n}U^\dagger\right)\right],
+\mathrm{Tr}\!\left[H_n\left(\rho^{\otimes n}-U\rho^{\otimes n}U^\dagger\right)\right],
 \qquad H_n=\sum_{a=1}^n H^{(a)}.
 ```
 
@@ -27,7 +27,7 @@ The [main theorem](science/model_and_main_theorem.md) proves a uniform bound $`W
 
 ```math
 \lim_{n\to\infty} W_n^{\mathrm{sym}}
-=\mathcal W\!\left(\tau_\infty,K_\infty\right)<\infty.
+=\mathcal W\!\left(\tau_\infty,K_\infty\right)\lt \infty.
 ```
 
 There is one mathematical oscillator mode for each pair of energy levels. Its energy gap is $`E_j-E_i`$ and its geometric occupation ratio is $`p_j/p_i`$. The known oscillator description becomes an exact work law through the [spectral construction](science/schur_tableau_spectrum.md), [passive-rearrangement argument](science/passive_rearrangement.md), and [energy-controlled limit](science/fluctuation_limit.md). These modes describe fluctuations within symmetry sectors; no auxiliary physical oscillators are supplied to the protocol.
@@ -66,6 +66,8 @@ Markers are exact finite-size optimizations; connecting lines guide the eye. The
 ## Read and reproduce
 
 Start with the [science overview](science/README.md), then follow the theorem and proof pages above. [Related work](references/RELATED_WORK.md) distinguishes inherited representation-theoretic ingredients from the optimized work law. The [source locator table](science/theorem_source_locators.md) identifies the exact primary statements used by the proof. [The reading guide](llms.txt) maps questions to their authoritative pages.
+
+For a guided route, start with the [learning overview](learning/README.md), then use the [Watrous source bridge](learning/anchor_bridge.md) and [30-milestone map](learning/milestones.md). The anchor is John Watrous, *The Theory of Quantum Information* (Cambridge, 2018): majorization and permutation-invariant operator algebras provide the foundations; the bridge supplies the thermodynamic interpretation and points to the additional representation-theoretic proof ingredients.
 
 From the repository root:
 

@@ -3,8 +3,8 @@
 Consider the fixed source and Hamiltonian
 
 ```math
-\rho=\operatorname{diag}\!\left(\frac35,\frac14,\frac3{20}\right),
-\qquad H=\operatorname{diag}(0,1,5).
+\rho=\mathrm{diag}\!\left(\frac35,\frac14,\frac3{20}\right),
+\qquad H=\mathrm{diag}(0,1,5).
 ```
 
 The probabilities decrease strictly with energy, so one copy is passive. Their logarithmic ratios are not proportional to the energy gaps, so the state is non-Gibbs. Work is measured in units of the first excitation gap. The initial mean energy of each copy is one.
@@ -67,7 +67,7 @@ Let $`W_R`$ be the work extracted by sorting the original, unnormalized probabil
 ```math
 0\le W_\infty-W_R
 \le T_R,
-\qquad T_R=\operatorname{Tr}\!\left[\tau_\infty K\mathbf1_{K>R}\right].
+\qquad T_R=\mathrm{Tr}\!\left[\tau_\infty K\mathbf1_{K>R}\right].
 ```
 
 The complete energy subspace matters: the retained energy list consists of the first entries of the full ordered energy spectrum. A small omitted probability in an arbitrary occupation box does not establish this work-error bound.

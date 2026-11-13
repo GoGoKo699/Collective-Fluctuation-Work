@@ -35,7 +35,7 @@ U=\bigoplus_\lambda U_\lambda\otimes I_{M_\lambda},
 Define
 
 ```math
-s_\lambda(p)=\operatorname{Tr}\pi_\lambda(\rho),\qquad
+s_\lambda(p)=\mathrm{Tr}\pi_\lambda(\rho),\qquad
 q_\lambda=\frac{\pi_\lambda(\rho)}{s_\lambda(p)},\qquad
 P_n(\lambda)=m_\lambda s_\lambda(p).
 ```
@@ -59,7 +59,7 @@ For a tableau $`T`$, let
 ```math
 m_{ij}(T)
 =\#\{\text{entries equal to }j\text{ in row }i\},
-\qquad 1\le i<j\le d.
+\qquad 1\le i\lt j\le d.
 ```
 
 The remaining $`\lambda_i-\sum_{j>i}m_{ij}`$ entries in row $`i`$ equal $`i`$. The occupation vector $`\boldsymbol m=(m_{ij})`$ uniquely determines the tableau, since its rows are sorted. Let $`S_\lambda\subset\mathbb N_0^{\mathcal R}`$ be the finite set of occupation vectors that give valid tableaux.
@@ -69,14 +69,14 @@ If $`w_i`$ is the total number of entries equal to $`i`$, then
 ```math
 w_i
 =\lambda_i-\sum_{j>i}m_{ij}
-+\sum_{h<i}m_{hi}.
++\sum_{h\lt i}m_{hi}.
 ```
 
 Consequently the joint state-energy eigenvalues are
 
 ```math
 \prod_i p_i^{w_i}
-=p^\lambda\prod_{i<j}r_{ij}^{m_{ij}},
+=p^\lambda\prod_{i\lt j}r_{ij}^{m_{ij}},
 \qquad
 p^\lambda:=\prod_i p_i^{\lambda_i},
 ```
@@ -85,7 +85,7 @@ and
 
 ```math
 \sum_i E_iw_i
-=e_\lambda+\sum_{i<j}\omega_{ij}m_{ij},
+=e_\lambda+\sum_{i\lt j}\omega_{ij}m_{ij},
 \qquad
 e_\lambda:=\sum_iE_i\lambda_i.
 ```
@@ -107,8 +107,8 @@ Mapping these orthonormal vectors to the corresponding occupation vectors define
 ```math
 J_\lambda:V_\lambda\longrightarrow\mathcal F,
 \qquad
-\operatorname{ran}J_\lambda
-=\operatorname{span}\{|\boldsymbol m\rangle:\boldsymbol m\in S_\lambda\}.
+\mathrm{ran}J_\lambda
+=\mathrm{span}\{|\boldsymbol m\rangle:\boldsymbol m\in S_\lambda\}.
 ```
 
 This is a joint spectral identification. It makes no assertion that finite-dimensional raising and lowering operators become exact oscillator operators.
@@ -120,7 +120,7 @@ Let $`\Pi_\lambda=J_\lambda J_\lambda^\dagger`$. Define
 ```math
 Z_\lambda
 =\sum_{\boldsymbol m\in S_\lambda}
- \prod_{i<j}r_{ij}^{m_{ij}}
+ \prod_{i\lt j}r_{ij}^{m_{ij}}
 =\frac{s_\lambda(p)}{p^\lambda},
 \qquad
 t_\lambda=\frac{Z_\lambda}{Z_\infty}.
@@ -149,9 +149,9 @@ The second equality is understood as an operator on the embedded finite-dimensio
 Put
 
 ```math
-g(\lambda)=\min_{1\le i<d}(\lambda_i-\lambda_{i+1}),
+g(\lambda)=\min_{1\le i\lt d}(\lambda_i-\lambda_{i+1}),
 \qquad
-|\boldsymbol m|_1=\sum_{i<j}m_{ij}.
+|\boldsymbol m|_1=\sum_{i\lt j}m_{ij}.
 ```
 
 **Lemma.** Every occupation vector satisfying $`|\boldsymbol m|_1\le g(\lambda)`$ belongs to $`S_\lambda`$.
@@ -159,7 +159,7 @@ g(\lambda)=\min_{1\le i<d}(\lambda_i-\lambda_{i+1}),
 **Proof.** Write $`M_i=\sum_{j>i}m_{ij}`$. The assumed bound implies
 
 ```math
-\lambda_i-M_i\ge\lambda_{i+1}\qquad(i<d).
+\lambda_i-M_i\ge\lambda_{i+1}\qquad(i\lt d).
 ```
 
 Construct each row by placing its $`\lambda_i-M_i`$ copies of $`i`$ first, followed by the prescribed larger entries in increasing order. All row lengths are nonnegative and correct. In every column that continues into row $`i+1`$, the entry in row $`i`$ is $`i`$, because the first $`\lambda_{i+1}`$ positions in that row are all $`i`$. The entry below is at least $`i+1`$. Hence every column is strictly increasing. The final row is filled with $`d`$. The resulting tableau is semistandard. ∎
@@ -175,30 +175,30 @@ a_{\boldsymbol m}
 =\langle\boldsymbol m|\tau_\infty|\boldsymbol m\rangle,
 \qquad
 k_{\boldsymbol m}
-=\sum_{i<j}\omega_{ij}m_{ij}.
+=\sum_{i\lt j}\omega_{ij}m_{ij}.
 ```
 
 For any nonnegative function $`f`$ of the excitation energy,
 
 ```math
-\operatorname{Tr}\!\left[q_\lambda f(K_\lambda)\right]
+\mathrm{Tr}\!\left[q_\lambda f(K_\lambda)\right]
 =\frac1{t_\lambda}
   \sum_{\boldsymbol m\in S_\lambda}a_{\boldsymbol m}f(k_{\boldsymbol m})
-\le Z_\infty\operatorname{Tr}\!\left[\tau_\infty f(K_\infty)\right].
+\le Z_\infty\mathrm{Tr}\!\left[\tau_\infty f(K_\infty)\right].
 ```
 
 Apply this first to $`f(k)=k`$ and then to $`f(k)=k\,1_{\{k>L\}}`$:
 
 ```math
-\operatorname{Tr}(q_\lambda K_\lambda)
+\mathrm{Tr}(q_\lambda K_\lambda)
 \le Z_\infty\mu_\infty=C(p,E),
 ```
 
 ```math
-\operatorname{Tr}\!\left[q_\lambda K_\lambda
+\mathrm{Tr}\!\left[q_\lambda K_\lambda
       1_{\{K_\lambda>L\}}\right]
 \le Z_\infty
-   \operatorname{Tr}\!\left[\tau_\infty K_\infty
+   \mathrm{Tr}\!\left[\tau_\infty K_\infty
       1_{\{K_\infty>L\}}\right].
 ```
 
@@ -221,10 +221,10 @@ t_\lambda\longrightarrow1,\qquad
 =2(1-t_\lambda)\longrightarrow0.
 ```
 
-The exact norm identity follows by summing the diagonal differences separately inside and outside $`S_\lambda`$. Because $`\sum_{\boldsymbol m}a_{\boldsymbol m}k_{\boldsymbol m}<\infty`$, dominated convergence also gives
+The exact norm identity follows by summing the diagonal differences separately inside and outside $`S_\lambda`$. Because $`\sum_{\boldsymbol m}a_{\boldsymbol m}k_{\boldsymbol m}\lt \infty`$, dominated convergence also gives
 
 ```math
-\operatorname{Tr}(q_\lambda K_\lambda)
+\mathrm{Tr}(q_\lambda K_\lambda)
 =\frac1{t_\lambda}\sum_{\boldsymbol m\in S_\lambda}
   a_{\boldsymbol m}k_{\boldsymbol m}
 \longrightarrow\mu_\infty.

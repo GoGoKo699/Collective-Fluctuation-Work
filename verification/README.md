@@ -3,7 +3,7 @@
 This directory verifies the qutrit example
 
 ```math
-\rho=\operatorname{diag}(3/5,1/4,3/20),\qquad H=\operatorname{diag}(0,1,5).
+\rho=\mathrm{diag}(3/5,1/4,3/20),\qquad H=\mathrm{diag}(0,1,5).
 ```
 
 The source is strictly passive and non-Gibbs. Energies and work are measured in units of the first excitation gap. A collective unitary may be entangling, but must commute with every permutation of the copies. All optimizations in this directory are for closed, cyclic unitary operations. No bath, auxiliary entropy sink, measurement, or discarded subsystem is included.
@@ -82,7 +82,7 @@ sort the **original, unnormalized** probabilities inside $`A_R`$ onto its increa
 ```math
 0\le\mathcal W(\tau,K)-W_R
 \le T_R,\qquad
-T_R=\operatorname{Tr}\bigl[\tau K\mathbf 1_{K>R}\bigr].
+T_R=\mathrm{Tr}\bigl[\tau K\mathbf 1_{K>R}\bigr].
 ```
 
 To see the upper bound, write the full eigenvalues in decreasing order as $`a_1\ge a_2\ge\cdots`$, and the eigenvalues retained in the cutoff as $`b_1\ge\cdots\ge b_D`$. The order-statistic inequality gives $`b_i\le a_i`$. Because the cutoff contains every state up to its energy boundary, its energies are exactly the first $`D`$ entries $`e_1\le\cdots\le e_D`$ of the full energy list, including degeneracies. Consequently,
@@ -196,7 +196,7 @@ The [classical comparison](../science/classical_comparison.md) gives the general
 
 Here the classical comparator consists specifically of **bijective permutations of the product energy basis that commute with every permutation of the sites**. It does not cover arbitrary stochastic thermodynamic operations.
 
-Let $`x`$ be a word of length $`n`$ over the three energy labels, and let $`F`$ be such an equivariant bijection. Equivariance gives $`\operatorname{Stab}(x)\subseteq\operatorname{Stab}(F(x))`$, and applying the inverse bijection gives equality. The stabilizer is the product of symmetric groups on the equal-letter position blocks. Its coordinate orbits determine those blocks, including singleton blocks. Therefore $`F(x)`$ has the same multiset of symbol counts as $`x`$.
+Let $`x`$ be a word of length $`n`$ over the three energy labels, and let $`F`$ be such an equivariant bijection. Equivariance gives $`\mathrm{Stab}(x)\subseteq\mathrm{Stab}(F(x))`$, and applying the inverse bijection gives equality. The stabilizer is the product of symmetric groups on the equal-letter position blocks. Its coordinate orbits determine those blocks, including singleton blocks. Therefore $`F(x)`$ has the same multiset of symbol counts as $`x`$.
 
 Conversely, two type orbits whose count triples differ only by a relabeling of the symbols are equivariantly isomorphic: use that symbol relabeling on every word of the orbit. Any permutation of the type orbits in a fixed count-multiset block can be implemented by choosing such isomorphisms separately on the source orbits. All orbits in the block have the same size $`n!/(a!b!c!)`$. Their populations and energies are constant on each orbit. Hence sorting orbit populations against orbit energies within each count-multiset block is attainable and optimal. The equal orbit sizes ensure that the grouped sorting is an assignment of entire orbits, with no fractional splitting. The script checks this equal-size condition explicitly.
 
@@ -204,18 +204,26 @@ The unrestricted benchmark is obtained by the same exact type grouping but a sin
 
 ## Independent checks actually performed
 
-1. **Direct tensor-space decomposition for $`n=1,2,3,4`$.** The code constructs all site-permutation matrices on dimensions 3, 9, 27, and 81, and forms the scaled central projectors
-   ```math
-   Q_\lambda=n!P_\lambda
-   =m_\lambda\sum_{\pi\in S_n}\chi_\lambda(\pi)U_\pi.
-   ```
-   It verifies the exact integer identities $`Q_\lambda^2=n!Q_\lambda`$, self-adjointness, mutual orthogonality, and $`\sum_\lambda Q_\lambda=n!I`$. Traces on every occupation subspace agree with the independently enumerated Gelfand–Tsetlin weight multiplicities. Direct sector sorting reproduces the finite-size work. These checks use fixed character tables of $`S_n`$ for $`n\le4`$; the relevant integer matrix entries and products are far below the `int64` limit.
+### Direct tensor-space decomposition for $`n=1,2,3,4`$
 
-2. **Exactly Gibbs input.** For the same energies, $`p=(32,16,1)/49`$ is Gibbs at $`\beta=\log2`$. Finite-copy work is exactly zero at $`n=2,4,10`$, and the root-state energy-cutoff work is exactly zero at $`R=40`$. The test uses rational probabilities ordered by the exact energy, not a numerical tolerance around zero.
+The code constructs all site-permutation matrices on dimensions 3, 9, 27, and 81, and forms the scaled central projectors
+```math
+Q_\lambda=n!P_\lambda
+=m_\lambda\sum_{\pi\in S_n}\chi_\lambda(\pi)U_\pi.
+```
+It verifies the exact integer identities $`Q_\lambda^2=n!Q_\lambda`$, self-adjointness, mutual orthogonality, and $`\sum_\lambda Q_\lambda=n!I`$. Traces on every occupation subspace agree with the independently enumerated Gelfand–Tsetlin weight multiplicities. Direct sector sorting reproduces the finite-size work. These checks use fixed character tables of $`S_n`$ for $`n\le4`$; the relevant integer matrix entries and products are far below the `int64` limit.
 
-3. **Normalization, dimension, and energy identities at every enumerated $`n`$.** These are checked with exact arithmetic, including $`n=60`$, whose full Hilbert-space dimension is $`3^{60}`$. The Schur calculation enumerates 1,159,400 irrep basis states at that size, with their multiplicities handled symbolically.
+### Exactly Gibbs input
 
-4. **Certified limiting-state truncation.** The two energy cutoffs are independently sorted, and the exact omitted first moment is recorded. The largest cutoff has work-error bound smaller than $`10^{-12}`$, as an explicit assertion. The resulting error here is much smaller, approximately $`6.79\times10^{-16}`$.
+For the same energies, $`p=(32,16,1)/49`$ is Gibbs at $`\beta=\log2`$. Finite-copy work is exactly zero at $`n=2,4,10`$, and the root-state energy-cutoff work is exactly zero at $`R=40`$. The test uses rational probabilities ordered by the exact energy, not a numerical tolerance around zero.
+
+### Normalization, dimension and energy at each enumerated size
+
+These are checked with exact arithmetic, including $`n=60`$, whose full Hilbert-space dimension is $`3^{60}`$. The Schur calculation enumerates 1,159,400 irrep basis states at that size, with their multiplicities handled symbolically.
+
+### Certified limiting-state truncation
+
+The two energy cutoffs are independently sorted, and the exact omitted first moment is recorded. The largest cutoff has work-error bound smaller than $`10^{-12}`$, as an explicit assertion. The resulting error here is much smaller, approximately $`6.79\times10^{-16}`$.
 
 ## Explicit extraction operations
 

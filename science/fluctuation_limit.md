@@ -8,9 +8,9 @@ Write
 
 ```math
 W_\lambda=\mathcal W(q_\lambda,K_\lambda),\qquad
-\mu_\lambda=\operatorname{Tr}(q_\lambda K_\lambda),\qquad
+\mu_\lambda=\mathrm{Tr}(q_\lambda K_\lambda),\qquad
 F_\lambda=\min_{U_\lambda}
- \operatorname{Tr}(U_\lambda q_\lambda U_\lambda^\dagger K_\lambda).
+ \mathrm{Tr}(U_\lambda q_\lambda U_\lambda^\dagger K_\lambda).
 ```
 
 The subtraction of the block floor does not change work, so $`W_\lambda=\mu_\lambda-F_\lambda`$. For finite-dimensional $`V_\lambda`$, descending population eigenvalues $`a_{\lambda,j}`$ and ascending excitation energies $`e_{\lambda,j}`$ give
@@ -87,12 +87,12 @@ Combining the bounds proves block work convergence.
 
 ### Uniformity in the minimum row gap
 
-The preceding statement applies to every sequence of partitions with $`g(\lambda)\to\infty`$. Equivalently, for every $`\varepsilon>0`$ there exists $`G<\infty`$ such that
+The preceding statement applies to every sequence of partitions with $`g(\lambda)\to\infty`$. Equivalently, for every $`\varepsilon>0`$ there exists $`G\lt \infty`$ such that
 
 ```math
 g(\lambda)\ge G
 \quad\Longrightarrow\quad
-|W_\lambda-W_\infty|<\varepsilon.
+|W_\lambda-W_\infty|\lt \varepsilon.
 ```
 
 If such a $`G`$ did not exist, one could choose a sequence with $`g(\lambda_k)\ge k`$ and error at least $`\varepsilon`$, contradicting the proved sequential convergence. This uniformity is what is needed for averaging; a limit along a single selected family of diagrams would not suffice.
@@ -108,7 +108,8 @@ P_n(\lambda)=m_\lambda s_\lambda(p),
 the normalized Young shape converges in probability to the ordered spectrum:
 
 ```math
-\frac{\lambda}{n}\xrightarrow[n\to\infty]{\Pr}p.
+\frac{\lambda}{n}\longrightarrow p
+\quad\text{in probability as }n\to\infty.
 ```
 
 This is the spectrum-estimation concentration statement of Keyl–Werner, Eq. (10), with the Schur probabilities identified in their Eq. (17). Their large-deviation theorem is stronger than required here. See the [source locators](theorem_source_locators.md).
@@ -116,10 +117,10 @@ This is the spectrum-estimation concentration statement of Keyl–Werner, Eq. (1
 Let
 
 ```math
-\Delta_p=\min_{1\le i<d}(p_i-p_{i+1})>0.
+\Delta_p=\min_{1\le i\lt d}(p_i-p_{i+1})>0.
 ```
 
-On the event $`\|\lambda/n-p\|_\infty<\Delta_p/4`$,
+On the event $`\max_i|\lambda_i/n-p_i|\lt \Delta_p/4`$,
 
 ```math
 \lambda_i-\lambda_{i+1}
@@ -144,7 +145,7 @@ Also $`0\le W_\infty\le\mu_\infty\le C(p,E)`$. Given $`\varepsilon>0`$, choose $
 ```math
 |W_n^{\rm sym}-W_\infty|
 \le\varepsilon
-+C(p,E)\Pr_{P_n}\{g(\lambda)<G\}.
++C(p,E)\Pr_{P_n}\{g(\lambda)\lt G\}.
 ```
 
 The probability tends to zero. Since $`\varepsilon`$ is arbitrary,

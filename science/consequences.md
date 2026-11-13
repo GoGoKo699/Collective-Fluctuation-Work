@@ -11,7 +11,7 @@ r_{ij}=e^{-\beta\omega_{ij}},
 \qquad
 \tau_\infty
 =\frac{e^{-\beta K_\infty}}
-       {\operatorname{Tr}e^{-\beta K_\infty}}.
+       {\mathrm{Tr}e^{-\beta K_\infty}}.
 ```
 
 Its populations decrease with energy, so it is already passive and $`W_\infty=0`$. In this case the original product state is Gibbs for $`H_n`$, and its work is zero for every $`n`$, even without the symmetry restriction.
@@ -21,17 +21,17 @@ For the converse, define the inverse temperatures of the adjacent root modes,
 ```math
 \beta_i
 =\frac{\log(p_i/p_{i+1})}{E_{i+1}-E_i}>0,
-\qquad 1\le i<d.
+\qquad 1\le i\lt d.
 ```
 
-If all these numbers equal $`\beta`$, telescoping gives $`p_i\propto e^{-\beta E_i}`$. Thus a non-Gibbs population vector has two adjacent root modes, denoted $`a`$ and $`b`$, with $`\beta_a<\beta_b`$. Write their gaps as $`\omega_a,\omega_b`$.
+If all these numbers equal $`\beta`$, telescoping gives $`p_i\propto e^{-\beta E_i}`$. Thus a non-Gibbs population vector has two adjacent root modes, denoted $`a`$ and $`b`$, with $`\beta_a\lt \beta_b`$. Write their gaps as $`\omega_a,\omega_b`$.
 
 There exist positive integers $`m,\ell`$ satisfying
 
 ```math
 \frac{\omega_b}{\omega_a}
-<\frac{m}{\ell}
-<\frac{\beta_b\omega_b}{\beta_a\omega_a},
+\lt \frac{m}{\ell}
+\lt \frac{\beta_b\omega_b}{\beta_a\omega_a},
 ```
 
 because this interval is nonempty and the rationals are dense. Compare two fluctuation basis states: $`A`$ has $`m`$ excitations in mode $`a`$ and all other modes empty; $`B`$ has $`\ell`$ excitations in mode $`b`$ and all other modes empty. Then
@@ -100,7 +100,7 @@ These unitaries may entangle different classes. The direct-product Schur decompo
 
 ```math
 \sum_{j=1}^b
- \operatorname{Tr}\!\left(q_{\lambda^{(j)}}K_{\lambda^{(j)}}\right)
+ \mathrm{Tr}\!\left(q_{\lambda^{(j)}}K_{\lambda^{(j)}}\right)
 \le b\,C(p,E).
 ```
 
