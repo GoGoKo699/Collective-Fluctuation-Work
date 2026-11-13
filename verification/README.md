@@ -204,18 +204,26 @@ The unrestricted benchmark is obtained by the same exact type grouping but a sin
 
 ## Independent checks actually performed
 
-1. **Direct tensor-space decomposition for $`n=1,2,3,4`$.** The code constructs all site-permutation matrices on dimensions 3, 9, 27, and 81, and forms the scaled central projectors
-   ```math
-   Q_\lambda=n!P_\lambda
-   =m_\lambda\sum_{\pi\in S_n}\chi_\lambda(\pi)U_\pi.
-   ```
-   It verifies the exact integer identities $`Q_\lambda^2=n!Q_\lambda`$, self-adjointness, mutual orthogonality, and $`\sum_\lambda Q_\lambda=n!I`$. Traces on every occupation subspace agree with the independently enumerated Gelfand–Tsetlin weight multiplicities. Direct sector sorting reproduces the finite-size work. These checks use fixed character tables of $`S_n`$ for $`n\le4`$; the relevant integer matrix entries and products are far below the `int64` limit.
+### Direct tensor-space decomposition for $`n=1,2,3,4`$
 
-2. **Exactly Gibbs input.** For the same energies, $`p=(32,16,1)/49`$ is Gibbs at $`\beta=\log2`$. Finite-copy work is exactly zero at $`n=2,4,10`$, and the root-state energy-cutoff work is exactly zero at $`R=40`$. The test uses rational probabilities ordered by the exact energy, not a numerical tolerance around zero.
+The code constructs all site-permutation matrices on dimensions 3, 9, 27, and 81, and forms the scaled central projectors
+```math
+Q_\lambda=n!P_\lambda
+=m_\lambda\sum_{\pi\in S_n}\chi_\lambda(\pi)U_\pi.
+```
+It verifies the exact integer identities $`Q_\lambda^2=n!Q_\lambda`$, self-adjointness, mutual orthogonality, and $`\sum_\lambda Q_\lambda=n!I`$. Traces on every occupation subspace agree with the independently enumerated Gelfand–Tsetlin weight multiplicities. Direct sector sorting reproduces the finite-size work. These checks use fixed character tables of $`S_n`$ for $`n\le4`$; the relevant integer matrix entries and products are far below the `int64` limit.
 
-3. **Normalization, dimension, and energy identities at every enumerated $`n`$.** These are checked with exact arithmetic, including $`n=60`$, whose full Hilbert-space dimension is $`3^{60}`$. The Schur calculation enumerates 1,159,400 irrep basis states at that size, with their multiplicities handled symbolically.
+### Exactly Gibbs input
 
-4. **Certified limiting-state truncation.** The two energy cutoffs are independently sorted, and the exact omitted first moment is recorded. The largest cutoff has work-error bound smaller than $`10^{-12}`$, as an explicit assertion. The resulting error here is much smaller, approximately $`6.79\times10^{-16}`$.
+For the same energies, $`p=(32,16,1)/49`$ is Gibbs at $`\beta=\log2`$. Finite-copy work is exactly zero at $`n=2,4,10`$, and the root-state energy-cutoff work is exactly zero at $`R=40`$. The test uses rational probabilities ordered by the exact energy, not a numerical tolerance around zero.
+
+### Normalization, dimension and energy at each enumerated size
+
+These are checked with exact arithmetic, including $`n=60`$, whose full Hilbert-space dimension is $`3^{60}`$. The Schur calculation enumerates 1,159,400 irrep basis states at that size, with their multiplicities handled symbolically.
+
+### Certified limiting-state truncation
+
+The two energy cutoffs are independently sorted, and the exact omitted first moment is recorded. The largest cutoff has work-error bound smaller than $`10^{-12}`$, as an explicit assertion. The resulting error here is much smaller, approximately $`6.79\times10^{-16}`$.
 
 ## Explicit extraction operations
 

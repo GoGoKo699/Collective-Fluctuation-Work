@@ -108,7 +108,8 @@ P_n(\lambda)=m_\lambda s_\lambda(p),
 the normalized Young shape converges in probability to the ordered spectrum:
 
 ```math
-\frac{\lambda}{n}\xrightarrow[n\to\infty]{\Pr}p.
+\frac{\lambda}{n}\longrightarrow p
+\quad\text{in probability as }n\to\infty.
 ```
 
 This is the spectrum-estimation concentration statement of Keyl–Werner, Eq. (10), with the Schur probabilities identified in their Eq. (17). Their large-deviation theorem is stronger than required here. See the [source locators](theorem_source_locators.md).
@@ -119,7 +120,7 @@ Let
 \Delta_p=\min_{1\le i\lt d}(p_i-p_{i+1})>0.
 ```
 
-On the event $`\|\lambda/n-p\|_\infty\lt \Delta_p/4`$,
+On the event $`\max_i|\lambda_i/n-p_i|\lt \Delta_p/4`$,
 
 ```math
 \lambda_i-\lambda_{i+1}
