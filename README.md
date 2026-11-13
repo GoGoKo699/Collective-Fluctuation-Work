@@ -67,6 +67,8 @@ Markers are exact finite-size optimizations; connecting lines guide the eye. The
 
 Start with the [science overview](science/README.md), then follow the theorem and proof pages above. [Related work](references/RELATED_WORK.md) distinguishes inherited representation-theoretic ingredients from the optimized work law. The [source locator table](science/theorem_source_locators.md) identifies the exact primary statements used by the proof. [The reading guide](llms.txt) maps questions to their authoritative pages.
 
+For a guided route, start with the [learning overview](learning/README.md), then use the [Watrous source bridge](learning/anchor_bridge.md) and [30-milestone map](learning/milestones.md). The anchor is John Watrous, *The Theory of Quantum Information* (Cambridge, 2018): majorization and permutation-invariant operator algebras provide the foundations; the bridge supplies the thermodynamic interpretation and points to the additional representation-theoretic proof ingredients.
+
 From the repository root:
 
 ```bash

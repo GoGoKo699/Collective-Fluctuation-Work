@@ -16,6 +16,10 @@ This repository determines the maximum closed cyclic work from iid passive quant
 - Exact theorem-source locations: science/theorem_source_locators.md.
 - Reproduction commands and validation boundaries: verification/README.md.
 
+## Learning routes
+
+The educational anchor is John Watrous, The Theory of Quantum Information (Cambridge University Press, 2018). Use learning/README.md for the route, learning/anchor_bridge.md for notation, relevant sections and the steps from majorization and invariant operator algebras to this project's work problem, and learning/milestones.md for exactly 30 common understanding targets. M01–M12 build the background; M13–M30 assemble the contribution and its interpretation. The canonical proof pages remain authoritative for the general theorem. Watrous supplies the quantum-information foundations; it does not supply the full thermodynamic, Young-diagram or highest-weight argument. Research citations identify those imported ingredients separately from the one educational anchor.
+
 ## Essential distinctions
 
 Exact invariance of every unitary is stronger than covariance of a noisy channel. A permutation-invariant source need not have support only in the bosonic symmetric subspace. Collective controls here include arbitrary entangling unitaries, not merely identical one-copy rotations. A fixed partition into control classes differs from selecting new batches over time. The exact limiting ergotropy is a closed-system result; a bath or discarded entropy sink changes the optimization. Strict population gaps and fixed local dimension remain part of the asymptotic claim.

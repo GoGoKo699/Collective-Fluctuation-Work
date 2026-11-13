@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 16,
+      "source_sha256": "3168e109a55b1d6b8a0da40f1f95c8ef4ccfd5bdf1f985d291658ae5657973a5",
+      "required_text": ["2.894208160219019", "≤", "W", "2.894208160219020"]
+    },
+    {
+      "path": "science/model_and_main_theorem.md",
+      "index": 22,
+      "source_sha256": "1c6118b63cbef9e8f5a2daf2b19434733b1a2a7e0cd1ebb2225ea70c79de5ba5",
+      "required_text": ["0", "≤", "W", "C", "Z", "μ", "n", "≥", "1"]
+    },
+    {
+      "path": "science/model_and_main_theorem.md",
+      "index": 23,
+      "source_sha256": "a376aa1c773bf77bb2dbcba1bcfa40f0c693992ab6c962960be1d0491153f5d9",
+      "required_text": ["lim", "W", "∞", "=", "τ", "K"]
+    },
+    {
+      "path": "learning/anchor_bridge.md",
+      "index": 25,
+      "source_sha256": "312cc2b78d9b4d274a0a443baeff49fa57894c968d5895e2b8e9ab43862d6797",
+      "required_text": ["0.09", "0.0625", "33", "400", "="]
+    }
+  ]
+}
