@@ -14,12 +14,12 @@ The unrestricted activation benchmark is [established prior work](references/REL
 
 ## Principal result
 
-Let $`H=\operatorname{diag}(E_1,\ldots,E_d)`$ with $`E_1<\cdots<E_d`$, and let $`\rho=\operatorname{diag}(p_1,\ldots,p_d)`$ with $`p_1>\cdots>p_d>0`$. The dimension, Hamiltonian and state remain fixed as $`n`$ grows. Define
+Let $`H=\mathrm{diag}(E_1,\ldots,E_d)`$ with $`E_1<\cdots<E_d`$, and let $`\rho=\mathrm{diag}(p_1,\ldots,p_d)`$ with $`p_1>\cdots>p_d>0`$. The dimension, Hamiltonian and state remain fixed as $`n`$ grows. Define
 
 ```math
 W_n^{\mathrm{sym}}
 =\max_{[U,P_\pi]=0\ \forall\pi\in S_n}
-\operatorname{Tr}\!\left[H_n\left(\rho^{\otimes n}-U\rho^{\otimes n}U^\dagger\right)\right],
+\mathrm{Tr}\!\left[H_n\left(\rho^{\otimes n}-U\rho^{\otimes n}U^\dagger\right)\right],
 \qquad H_n=\sum_{a=1}^n H^{(a)}.
 ```
 

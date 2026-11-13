@@ -8,9 +8,9 @@ Write
 
 ```math
 W_\lambda=\mathcal W(q_\lambda,K_\lambda),\qquad
-\mu_\lambda=\operatorname{Tr}(q_\lambda K_\lambda),\qquad
+\mu_\lambda=\mathrm{Tr}(q_\lambda K_\lambda),\qquad
 F_\lambda=\min_{U_\lambda}
- \operatorname{Tr}(U_\lambda q_\lambda U_\lambda^\dagger K_\lambda).
+ \mathrm{Tr}(U_\lambda q_\lambda U_\lambda^\dagger K_\lambda).
 ```
 
 The subtraction of the block floor does not change work, so $`W_\lambda=\mu_\lambda-F_\lambda`$. For finite-dimensional $`V_\lambda`$, descending population eigenvalues $`a_{\lambda,j}`$ and ascending excitation energies $`e_{\lambda,j}`$ give

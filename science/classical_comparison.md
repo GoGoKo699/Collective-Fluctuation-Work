@@ -19,10 +19,10 @@ The **stabilizer obstruction is prior work**. Yadin, Morris, and Adesso, [“Mix
 For any string, write
 
 ```math
-\operatorname{Stab}(x)=\{\pi\in S_n:\pi x=x\}.
+\mathrm{Stab}(x)=\{\pi\in S_n:\pi x=x\}.
 ```
 
-Equivariance gives $`\operatorname{Stab}(x)\subseteq\operatorname{Stab}(f(x))`$. Since the inverse of an equivariant bijection is equivariant, the reverse inclusion holds as well. Thus the stabilizers agree as actual subgroups of $`S_n`$, not merely as abstract groups or groups of equal size.
+Equivariance gives $`\mathrm{Stab}(x)\subseteq\mathrm{Stab}(f(x))`$. Since the inverse of an equivariant bijection is equivariant, the reverse inclusion holds as well. Thus the stabilizers agree as actual subgroups of $`S_n`$, not merely as abstract groups or groups of equal size.
 
 The orbits of this stabilizer on the sites are precisely the sets of positions bearing each occupied symbol, including singleton sets. Therefore $`f(x)`$ can only relabel the occupied symbols injectively. It cannot split an equal-symbol block, since that would remove a stabilizing transposition; it cannot merge distinct blocks, since that would add one. Consequently the unordered multiset of occupation counts is preserved pointwise.
 

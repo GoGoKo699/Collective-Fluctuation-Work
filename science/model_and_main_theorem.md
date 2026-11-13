@@ -32,7 +32,7 @@ The extracted work is the mean decrease of the bare Hamiltonian in a cyclic unit
 ```math
 W_n^{\rm sym}(\rho,H)
 =\max_{U\in\mathcal G_n}
-\operatorname{Tr}\!\left[H_n
+\mathrm{Tr}\!\left[H_n
   \left(\rho^{\otimes n}-U\rho^{\otimes n}U^\dagger\right)\right].
 ```
 
@@ -59,7 +59,7 @@ Z_\infty=\prod_{i<j}\frac1{1-r_{ij}},\qquad
 
 ```math
 K_\infty=\sum_{i<j}\omega_{ij}N_{ij},\qquad
-\mu_\infty=\operatorname{Tr}(\tau_\infty K_\infty)
+\mu_\infty=\mathrm{Tr}(\tau_\infty K_\infty)
 =\sum_{i<j}\omega_{ij}\frac{r_{ij}}{1-r_{ij}}<\infty.
 ```
 
@@ -68,8 +68,8 @@ These mathematical oscillator modes describe within-sector fluctuations; they ar
 For a state $`\sigma`$ of finite energy and a nonnegative Hamiltonian $`K`$, write
 
 ```math
-\mathcal W(\sigma,K)=\operatorname{Tr}(\sigma K)
--\inf_V\operatorname{Tr}(V\sigma V^\dagger K),
+\mathcal W(\sigma,K)=\mathrm{Tr}(\sigma K)
+-\inf_V\mathrm{Tr}(V\sigma V^\dagger K),
 ```
 
 where $`V`$ ranges over unitaries; outputs of infinite energy cannot improve the infimum. For $`(\tau_\infty,K_\infty)`$, passive rearrangement attains the infimum and is approximable by finite permutations with an energy-tail certificate. [Passive rearrangement](passive_rearrangement.md) proves these statements.
@@ -95,7 +95,7 @@ Moreover,
 ```math
 W_\infty(p,E)=0
 \quad\Longleftrightarrow\quad
-\rho=\frac{e^{-\beta H}}{\operatorname{Tr}e^{-\beta H}}
+\rho=\frac{e^{-\beta H}}{\mathrm{Tr}e^{-\beta H}}
 \text{ for some }\beta>0.
 ```
 

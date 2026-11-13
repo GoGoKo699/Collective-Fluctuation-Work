@@ -35,7 +35,7 @@ The Schur decomposition introduces $`V_\lambda`$, the sector space on which coll
 A cyclic unitary preserves the eigenvalues of a state while changing how its eigenvectors sit relative to the energy levels. For a finite-dimensional state with descending eigenvalues $`a_1\ge\cdots\ge a_D`$ and an energy observable with ascending eigenvalues $`e_1\le\cdots\le e_D`$, passive rearrangement gives
 
 ```math
-\min_U\operatorname{Tr}(U\sigma U^\dagger K)
+\min_U\mathrm{Tr}(U\sigma U^\dagger K)
 =\sum_{j=1}^{D}a_je_j.
 ```
 
@@ -66,7 +66,7 @@ W3 supplies useful norm language, but trace-norm convergence alone does not cont
 ```math
 0\le W_\infty-W_L\le T_L,
 \qquad
-T_L=\operatorname{Tr}\!\left(\tau_\infty K_\infty
+T_L=\mathrm{Tr}\!\left(\tau_\infty K_\infty
  \mathbf1_{\{K_\infty>L\}}\right)\longrightarrow0.
 ```
 

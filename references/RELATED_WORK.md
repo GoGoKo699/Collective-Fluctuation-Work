@@ -8,9 +8,9 @@ Robert Alicki and Mark Fannes established the unrestricted many-copy benchmark i
 
 ```math
 \lim_{n\to\infty}\frac{W_n^{\mathrm{all}}(\rho,H)}{n}
-=\operatorname{Tr}(\rho H)-\operatorname{Tr}(\gamma_{\bar\beta}H),
+=\mathrm{Tr}(\rho H)-\mathrm{Tr}(\gamma_{\bar\beta}H),
 \qquad
-\gamma_{\bar\beta}=\frac{e^{-\bar\beta H}}{\operatorname{Tr}e^{-\bar\beta H}},
+\gamma_{\bar\beta}=\frac{e^{-\bar\beta H}}{\mathrm{Tr}e^{-\bar\beta H}},
 \qquad
 S(\gamma_{\bar\beta})=S(\rho).
 ```

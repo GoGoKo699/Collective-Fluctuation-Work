@@ -34,7 +34,7 @@ F_\infty=\sum_{j=1}^{\infty}a_je_j.
 **Lemma.** This series is finite, and
 
 ```math
-\inf_V\operatorname{Tr}(V\tau_\infty V^\dagger K_\infty)
+\inf_V\mathrm{Tr}(V\tau_\infty V^\dagger K_\infty)
 =F_\infty.
 ```
 
@@ -43,24 +43,24 @@ The infimum is attained by a unitary that matches descending populations to asce
 **Proof.** For any rank-$`D`$ projection $`Q`$ and any unitary $`V`$,
 
 ```math
-\operatorname{Tr}(QV\tau_\infty V^\dagger)
+\mathrm{Tr}(QV\tau_\infty V^\dagger)
 \le\sum_{j=1}^{D}a_j.
 ```
 
 Indeed, in a population eigenbasis the left side is $`\sum_j a_jc_j`$, where $`0\le c_j\le1`$ and $`\sum_jc_j=D`$. Moving the available coefficient weight to the first $`D`$ positions maximizes this expression.
 
-Put $`D(t)=\operatorname{rank}1_{\{K_\infty\le t\}}`$. For any density operator $`\sigma`$, spectral calculus and Tonelli's theorem give, with infinite values allowed,
+Put $`D(t)=\mathrm{rank}1_{\{K_\infty\le t\}}`$. For any density operator $`\sigma`$, spectral calculus and Tonelli's theorem give, with infinite values allowed,
 
 ```math
-\operatorname{Tr}(\sigma K_\infty)
+\mathrm{Tr}(\sigma K_\infty)
 =\int_0^\infty
- \left[1-\operatorname{Tr}\!\left(\sigma\,1_{\{K_\infty\le t\}}\right)\right]dt.
+ \left[1-\mathrm{Tr}\!\left(\sigma\,1_{\{K_\infty\le t\}}\right)\right]dt.
 ```
 
 The projection inequality therefore implies
 
 ```math
-\operatorname{Tr}(V\tau_\infty V^\dagger K_\infty)
+\mathrm{Tr}(V\tau_\infty V^\dagger K_\infty)
 \ge\int_0^\infty
  \left[1-\sum_{j=1}^{D(t)}a_j\right]dt
 =\sum_{j=1}^{\infty}a_je_j.
@@ -92,7 +92,7 @@ Sort only the populations in $`A_L`$ onto the energies in $`A_L`$, and act as th
 
 ```math
 W_L
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
  K_\infty(\tau_\infty-V_L\tau_\infty V_L^\dagger)\right].
 ```
 

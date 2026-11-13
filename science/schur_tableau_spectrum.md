@@ -35,7 +35,7 @@ U=\bigoplus_\lambda U_\lambda\otimes I_{M_\lambda},
 Define
 
 ```math
-s_\lambda(p)=\operatorname{Tr}\pi_\lambda(\rho),\qquad
+s_\lambda(p)=\mathrm{Tr}\pi_\lambda(\rho),\qquad
 q_\lambda=\frac{\pi_\lambda(\rho)}{s_\lambda(p)},\qquad
 P_n(\lambda)=m_\lambda s_\lambda(p).
 ```
@@ -107,8 +107,8 @@ Mapping these orthonormal vectors to the corresponding occupation vectors define
 ```math
 J_\lambda:V_\lambda\longrightarrow\mathcal F,
 \qquad
-\operatorname{ran}J_\lambda
-=\operatorname{span}\{|\boldsymbol m\rangle:\boldsymbol m\in S_\lambda\}.
+\mathrm{ran}J_\lambda
+=\mathrm{span}\{|\boldsymbol m\rangle:\boldsymbol m\in S_\lambda\}.
 ```
 
 This is a joint spectral identification. It makes no assertion that finite-dimensional raising and lowering operators become exact oscillator operators.
@@ -181,24 +181,24 @@ k_{\boldsymbol m}
 For any nonnegative function $`f`$ of the excitation energy,
 
 ```math
-\operatorname{Tr}\!\left[q_\lambda f(K_\lambda)\right]
+\mathrm{Tr}\!\left[q_\lambda f(K_\lambda)\right]
 =\frac1{t_\lambda}
   \sum_{\boldsymbol m\in S_\lambda}a_{\boldsymbol m}f(k_{\boldsymbol m})
-\le Z_\infty\operatorname{Tr}\!\left[\tau_\infty f(K_\infty)\right].
+\le Z_\infty\mathrm{Tr}\!\left[\tau_\infty f(K_\infty)\right].
 ```
 
 Apply this first to $`f(k)=k`$ and then to $`f(k)=k\,1_{\{k>L\}}`$:
 
 ```math
-\operatorname{Tr}(q_\lambda K_\lambda)
+\mathrm{Tr}(q_\lambda K_\lambda)
 \le Z_\infty\mu_\infty=C(p,E),
 ```
 
 ```math
-\operatorname{Tr}\!\left[q_\lambda K_\lambda
+\mathrm{Tr}\!\left[q_\lambda K_\lambda
       1_{\{K_\lambda>L\}}\right]
 \le Z_\infty
-   \operatorname{Tr}\!\left[\tau_\infty K_\infty
+   \mathrm{Tr}\!\left[\tau_\infty K_\infty
       1_{\{K_\infty>L\}}\right].
 ```
 
@@ -224,7 +224,7 @@ t_\lambda\longrightarrow1,\qquad
 The exact norm identity follows by summing the diagonal differences separately inside and outside $`S_\lambda`$. Because $`\sum_{\boldsymbol m}a_{\boldsymbol m}k_{\boldsymbol m}<\infty`$, dominated convergence also gives
 
 ```math
-\operatorname{Tr}(q_\lambda K_\lambda)
+\mathrm{Tr}(q_\lambda K_\lambda)
 =\frac1{t_\lambda}\sum_{\boldsymbol m\in S_\lambda}
   a_{\boldsymbol m}k_{\boldsymbol m}
 \longrightarrow\mu_\infty.

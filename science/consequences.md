@@ -11,7 +11,7 @@ r_{ij}=e^{-\beta\omega_{ij}},
 \qquad
 \tau_\infty
 =\frac{e^{-\beta K_\infty}}
-       {\operatorname{Tr}e^{-\beta K_\infty}}.
+       {\mathrm{Tr}e^{-\beta K_\infty}}.
 ```
 
 Its populations decrease with energy, so it is already passive and $`W_\infty=0`$. In this case the original product state is Gibbs for $`H_n`$, and its work is zero for every $`n`$, even without the symmetry restriction.
@@ -100,7 +100,7 @@ These unitaries may entangle different classes. The direct-product Schur decompo
 
 ```math
 \sum_{j=1}^b
- \operatorname{Tr}\!\left(q_{\lambda^{(j)}}K_{\lambda^{(j)}}\right)
+ \mathrm{Tr}\!\left(q_{\lambda^{(j)}}K_{\lambda^{(j)}}\right)
 \le b\,C(p,E).
 ```
 
